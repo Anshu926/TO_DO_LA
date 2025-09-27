@@ -1,0 +1,25 @@
+/* App.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #232E58; /* primary color */
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,68 @@
+.users-page {
+  padding: 30px 20px;
+  color: #f9f9f9;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.users-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #AC42D5;
+}
+
+.users-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.users-table th,
+.users-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+
+.users-table th {
+  background: linear-gradient(45deg, #AC42D5, #7a2aa3);
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.users-table td {
+  font-size: 15px;
+  color: #ddd;
+}
+
+.users-table tr:nth-child(even) {
+  background: #2a2a2a;
+}
+
+.users-table tr:hover {
+  background: #333;
+  transition: 0.3s;
+}
+
+.delete-btn {
+  padding: 8px 14px;
+  border: none;
+  background: crimson;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}

@@ -1,0 +1,154 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background: #101744;
+  color: #fff;
+}
+
+.add-task {
+  max-width: 500px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px 20px;
+  background: #1f2b5b;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 5rem;
+}
+
+.add-task:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+.add-task h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  text-align: center;
+  color: #B624FF;
+  font-weight: 700;
+  text-shadow: 0 0 8px #B624FF, 0 0 15px #6c33ff;
+}
+
+.add-task form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.add-task input,
+.add-task textarea,
+.add-task select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #2e3b75;
+  color: #fff;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-task input:focus,
+.add-task textarea:focus,
+.add-task select:focus {
+  background: #3b4a8a;
+  box-shadow: 0 0 12px rgba(182,36,255,0.6);
+}
+
+.add-task textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.add-task button {
+  background: linear-gradient(135deg, #B624FF, #6c33ff);
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.add-task button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(182,36,255,0.7);
+  background: linear-gradient(135deg, #9a1bcc, #b624ff);
+}
+
+.add-task input::placeholder,
+.add-task textarea::placeholder {
+  color: #c5c5c5;
+  opacity: 1;
+}
+
+.add-task input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(2);
+  cursor: pointer;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.add-task select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 14px 40px 14px 14px;
+  cursor: pointer;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .add-task {
+    max-width: 100%;
+    padding: 18px 14px;
+    margin: 20px auto;
+  }
+
+  .add-task h2 {
+    font-size: 22px;
+  }
+
+  .add-task input,
+  .add-task textarea,
+  .add-task select {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .add-task button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .select-wrapper::after {
+    right: 10px;
+    font-size: 0.8rem;
+  }
+}
